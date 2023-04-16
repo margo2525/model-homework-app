@@ -1,0 +1,5 @@
+### cehck deleting existing phone - 204
+DELETE http://localhost:5000/api/phones/3 HTTP/1.1
+
+### cehck deleting doesn't existing phone - 404
+DELETE http://localhost:5000/api/phones/1110 HTTP/1.1

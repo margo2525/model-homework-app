@@ -1,0 +1,36 @@
+{
+  "name": "sequelize-model-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "start-dev": "nodemon ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pecourses/pe2022-1-sequelize-model-app.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/pecourses/pe2022-1-sequelize-model-app/issues"
+  },
+  "homepage": "https://github.com/pecourses/pe2022-1-sequelize-model-app#readme",
+  "description": ""
+}

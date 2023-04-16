@@ -1,0 +1,111 @@
+### check valid phone 201
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check invalid phone model 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check invalid phone brand 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check invalid phone manufactureYear 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "Samsung",
+  "manufactureYear": "22",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check invalid phone ram 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "eight",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check invalid phone processor 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check invalid phone screenDiagonal 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "",
+  "nfc": true
+}
+
+### check invalid phone nfc 422
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy ",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": ""
+}

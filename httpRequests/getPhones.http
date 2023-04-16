@@ -1,0 +1,5 @@
+### check valid get phone 200
+GET http://localhost:5000/api/phones?limit=2&offset=0 HTTP/1.1
+
+### check invalid get phone 404
+GET http://localhost:5000/api/phones?limit=2&offset=1110 HTTP/1.1

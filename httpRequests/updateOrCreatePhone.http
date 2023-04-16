@@ -1,0 +1,55 @@
+### check valid phone data 200
+PUT http://localhost:5000/api/phones/1 HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Galaxy S22",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": false
+}
+
+### check invalid phone data 422
+PUT http://localhost:5000/api/phones/1 HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "",
+  "brand": "Samsung",
+  "manufactureYear": "2022",
+  "ram": "8",
+  "processor": "Exynos 2200",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check valid phone data (not exist) 201
+PUT http://localhost:5000/api/phones/11 HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Iphone 13",
+  "brand": "Apple",
+  "manufactureYear": "2021",
+  "ram": "4",
+  "processor": "A15 Bionic",
+  "screenDiagonal": "6.1",
+  "nfc": true
+}
+
+### check valid phone data (not exist) 201
+PUT http://localhost:5000/api/phones/111 HTTP/1.1
+Content-Type: application/vnd.api+json
+
+{
+  "model": "Iphone 13",
+  "brand": "Apple",
+  "manufactureYear": "2021",
+  "ram": "4",
+  "processor": "A15 Bionic",
+  "screenDiagonal": "6.1",
+  "nfc": 658
+}

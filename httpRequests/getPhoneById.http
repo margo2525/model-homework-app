@@ -1,0 +1,5 @@
+### check existing phone 200
+GET http://localhost:5000/api/phones/1 HTTP/1.1
+
+### check doesn't existing phone 404
+GET http://localhost:5000/api/phones/1110 HTTP/1.1
